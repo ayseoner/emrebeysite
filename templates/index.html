@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+
+<!-- start head -->
+{% include 'head.html' %}
+
+<!-- finish head -->
+
+<body>
+<!--   header area start   -->
+{% include 'header.html' %}
+<!--   header area end   -->
+
+
+<!--   search bar popup start   -->
+<div class="search-popup">
+    <form class="search-form" action="#">
+        <div class="form-element"><input type="text" placeholder="Type your search keyword"></div>
+    </form>
+    <div class="search-popup-overlay" id="searchOverlay"></div>
+    <button class="search-close-btn" id="searchCloseBtn"><i class="fas fa-times"></i></button>
+</div>
+<!--   search bar popup end   -->
+
+
+<!--  hero area start  -->
+<div class="hero-area hero-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-8">
+                <div class="hero-txt">
+                    <span class="wow fadeInDown" data-wow-duration="1.5s">Firma Kliniği</span>
+                    <h1 class="wow fadeInUp" data-wow-duration="1.5s">Uygulamalı Çözümler</h1>
+                    <a class="wow fadeInUp boxed-btn" data-wow-duration="1.5s"
+                       href="/iletisim/"><span>İletişime Geçin</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-overlay"></div>
+</div>
+<!--  hero area end  -->
+
+
+{#<div class="features-section">#}
+{#    <div class="container">#}
+{#        <div class="row feature-bg feature-content">#}
+{#            <div class="service-section">#}
+{#    <div class="container">#}
+{#        <span class="title">FİRMA KLİNİĞİ</span>#}
+{#        <h2 class="subtitle">HİZMETLERİMİZ</h2>#}
+{#        <div class="service-carousel owl-carousel owl-theme">#}
+{#            <div class="single-service">#}
+{#                <div class="img-wrapper">#}
+{#                    <img src="/static/img/services/service_1.jpg" alt="">#}
+{#                </div>#}
+{#                <div class="service-txt">#}
+{#                    <h4 class="service-title">Ar-Ge Hizmetleri <br> <br></h4>#}
+{#                    <p class="service-para">AÇIKLAMA YAZILACAK</p>#}
+{#                    <a href="/hizmetlerimiz/ar-ge-hizmetleri" class="readmore">HİZMETLERİ GÖR</a>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="single-service">#}
+{#                <div class="img-wrapper">#}
+{#                    <img src="/static/img/services/service_2.jpg" alt="">#}
+{#                </div>#}
+{#                <div class="service-txt">#}
+{#                    <h4 class="service-title">VERGİ VE SİGORTA HİZMETLERİ</h4>#}
+{#                    <p class="service-para">AÇIKLAMA YAZILACAK</p>#}
+{#                    <a href="/hizmetlerimiz/vergi-ve-sigorta-danismanligi/" class="readmore">HİZMETLERİ GÖR</a>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="single-service">#}
+{#                <div class="img-wrapper">#}
+{#                    <img src="/static/img/services/service_3.jpg" alt="">#}
+{#                </div>#}
+{#                <div class="service-txt">#}
+{#                    <h4 class="service-title">HİBE VE TEŞVİK HİZMETLERİ</h4>#}
+{#                    <p class="service-para">AÇIKLAMA YAZILACAK</p>#}
+{#                    <a href="/hizmetlerimiz/genel-hibe-ve-tesvik-danismanligi" class="readmore">HİZMETLERİ GÖR</a>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="single-service">#}
+{#                <div class="img-wrapper">#}
+{#                    <img src="/static/img/services/service_4.jpg" alt="">#}
+{#                </div>#}
+{#                <div class="service-txt">#}
+{#                    <h4 class="service-title">PROJE YAZIM VE YÖNETİMİ HİZMETLERİ</h4>#}
+{#                    <p class="service-para">AÇIKLAMA YAZILACAK</p>#}
+{#                    <a href="/hizmetlerimiz/proje-yazim-ve-yönetimi-hizmetleri/" class="readmore">HİZMETLERİ GÖR</a>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="single-service">#}
+{#                <div class="img-wrapper">#}
+{#                    <img src="/static/img/services/service_5.jpg" alt="">#}
+{#                </div>#}
+{#                <div class="service-txt">#}
+{#                    <h4 class="service-title">ŞİRKET DEĞERLEME <br> <br></h4>#}
+{#                    <p class="service-para">AÇIKLAMA YAZILACAK</p>#}
+{#                    <a href="/hizmetlerimiz/sirket-degerleme/" class="readmore">HİZMETLERİ GÖR</a>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="single-service">#}
+{#                <div class="img-wrapper">#}
+{#                    <img src="/static/img/services/service_6.jpg" alt="">#}
+{#                </div>#}
+{#                <div class="service-txt">#}
+{#                    <h4 class="service-title">DESTEK HİZMETLERİ <br> <br></h4>#}
+{#                    <p class="service-para">AÇIKLAMA YAZILACAK</p>#}
+{#                    <a href="/hizmetlerimiz/destek-hizmetleri/" class="readmore">HİZMETLERİ GÖR</a>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+<!--  features section end  -->
+
+
+{#<div class="features-section">#}
+{#    <div class="container">#}
+{#        <div class="row feature-bg feature-content">#}
+{#            <div class="col-lg-7 offset-lg-5 pr-0">#}
+{#                <div class="features">#}
+{#                    <span class="title">FİRMA KLİNİĞİ</span>#}
+{#                    <h2 class="subtitle">ASDSAD</h2>#}
+{#                    <div class="feature-lists">#}
+{#                        <div class="single-feature wow fadeInUp" data-wow-duration="1s">#}
+{#                            <div class="icon-wrapper"><i class="flaticon-customer-service"></i></div>#}
+{#                            <div class="feature-details">#}
+{##}
+{#                                <p>FK sunuş yazısı#}
+{#                                    FK olarak “Hands-on Çözümler” sloganımız ile sadece tavsiye ile kalmayıp işleri#}
+{#                                    kendimizin yaptığını vurgulamak istiyoruz.#}
+{#                                    Ar-ge merkezlerinde ya da Teknokentlerde faaliyet yürüten firmaların yönetsel ve#}
+{#                                    işlevsel konularında görevler üstlenerek a’dan z’ye anahtar teslimi denebilecek#}
+{#                                    çözümler sunuyoruz.#}
+{#                                    Ar-ge faaliyeti yürüten firmaların Sağlıklı bir başlangıç, sağlıklı ve kaliteli bir#}
+{#                                    yaşam sürmeleri için butik, o firmaya özgü ve özel çalışıyoruz.#}
+{#                                    Türkiye’nin geleceğinin firmaların teknoloji geliştirilmesiyle parlayabileceği#}
+{#                                    bilinciyle değer katmaya ve değer artırmaya odaklanıyoruz.#}
+{#                                    Birlikte daha güçlü bir gelecek için, daha sağlıklı ve güçlü firmaların gelişimine#}
+{#                                    rehberlik ediyoruz. </p>#}
+{#                            </div>#}
+{#                        </div>#}
+{##}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+<!--  features section end  -->
+
+
+<!--  service section start  -->
+<div class="service-section">
+    <div class="container">
+        <span class="title">Firma Kliniği</span>
+        <h2 class="subtitle">Hizmetlerimiz</h2>
+        <div class="service-carousel owl-carousel owl-theme">
+            <div class="single-service">
+                <div class="img-wrapper">
+                    <img src="/static/img/services/service_1.jpg" alt="Ar-Ge Hizmetleri">
+                </div>
+                <div class="service-txt">
+                    <h4 class="service-title">Ar-Ge Hizmetleri <br><br></h4>
+                    {#                    <p class="service-para">AÇIKLAMA YAZILACAK</p>#}
+                    <a href="/hizmetlerimiz/ar-ge-hizmetleri/" class="readmore">HİZMETLERİ GÖR</a>
+                </div>
+            </div>
+            <div class="single-service">
+                <div class="img-wrapper">
+                    <img src="/static/img/services/service_2.jpg" alt="Vergi ve Sigorta Hizmetleri">
+                </div>
+                <div class="service-txt">
+                    <h4 class="service-title">Vergi ve Sigorta Hizmetleri</h4>
+                    {#                    <p class="service-para">AÇIKLAMA YAZILACAK</p>#}
+                    <a href="/hizmetlerimiz/vergi-ve-sigorta-danismanligi/" class="readmore">HİZMETLERİ GÖR</a>
+                </div>
+            </div>
+            <div class="single-service">
+                <div class="img-wrapper">
+                    <img src="/static/img/services/service_3.jpg" alt="Hibe ve Teşvik Hizmetleri">
+                </div>
+                <div class="service-txt">
+                    <h4 class="service-title">Hibe ve Teşvik Hizmetleri<br><br></h4>
+                    {#                    <p class="service-para">AÇIKLAMA YAZILACAK</p>#}
+                    <a href="/hizmetlerimiz/genel-hibe-ve-tesvik-danismanligi/" class="readmore">HİZMETLERİ GÖR</a>
+                </div>
+            </div>
+            <div class="single-service">
+                <div class="img-wrapper">
+                    <img src="/static/img/services/service_4.jpg" alt="Proje Yazım ve Yönetimi Hizmetleri">
+                </div>
+                <div class="service-txt">
+                    <h4 class="service-title">Proje Yazım ve Yönetimi Hizmetleri</h4>
+                    {#                    <p class="service-para">AÇIKLAMA YAZILACAK</p>#}
+                    <a href="/hizmetlerimiz/proje-yazim-ve-yönetimi-hizmetleri/" class="readmore">HİZMETLERİ GÖR</a>
+                </div>
+            </div>
+            <div class="single-service">
+                <div class="img-wrapper">
+                    <img src="/static/img/services/service_5.jpg" alt="Şirket Değerleme">
+                </div>
+                <div class="service-txt">
+                    <h4 class="service-title">Şirket Değerleme<br><br></h4>
+                    {#                    <p class="service-para">AÇIKLAMA YAZILACAK</p>#}
+                    <a href="/hizmetlerimiz/sirket-degerleme/" class="readmore">HİZMETLERİ GÖR</a>
+                </div>
+            </div>
+            <div class="single-service">
+                <div class="img-wrapper">
+                    <img src="/static/img/services/service_6.jpg" alt="Destek Hizmetleri">
+                </div>
+                <div class="service-txt">
+                    <h4 class="service-title">Destek Hizmetleri</h4>
+                    {#                    <p class="service-para">AÇIKLAMA YAZILACAK</p>#}
+                    <a href="/hizmetlerimiz/destek-hizmetleri/" class="readmore">HİZMETLERİ GÖR</a>
+                </div>
+            </div>
+            <div class="single-service">
+                <div class="img-wrapper">
+                    <img src="/static/img/services/service_7.jpg" alt="Yatırım ve Teşvik Danışmanlığı">
+                </div>
+                <div class="service-txt">
+                    <h4 class="service-title">Yatırım ve Teşvik Danışmanlığı</h4>
+                    {#                    <p class="service-para">AÇIKLAMA YAZILACAK</p>#}
+                    <a href="/hizmetlerimiz/yatirim-ve-tesvik-danismanligi/" class="readmore">HİZMETLERİ GÖR</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  service section end  -->
+
+
+<!--  about section start  -->
+<div class="about-section about-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <img class="ceo-pic" src="/static/img/ceo.png" alt="Gamze Karaa Resim">
+            </div>
+            <div class="col-lg-6 offset-lg-1">
+                <div class="comment-content">
+
+                    <h2 class="subtitle">Firma Kliniği Olarak</h2>
+                    <p class="comment">
+                        “Uygulamalı Çözümler” sloganımız ile sadece tavsiye ile kalmayıp işleri kendimizin
+                        yaptığını vurgulamak istiyoruz.
+                        <br><br> Ar-ge merkezlerinde ya da Teknokentlerde faaliyet yürüten firmaların yönetsel ve
+                        işlevsel
+                        konularında görevler üstlenerek a’dan z’ye anahtar teslimi denebilecek çözümler sunuyoruz.
+                        <br><br>Ar-ge faaliyeti yürüten firmaların Sağlıklı bir başlangıç, sağlıklı ve kaliteli bir
+                        yaşam
+                        sürmeleri için butik, o firmaya özgü ve özel çalışıyoruz.
+                        <br><br>Türkiye’nin geleceğinin firmaların teknoloji geliştirilmesiyle parlayabileceği
+                        bilinciyle değer
+                        katmaya ve değer artırmaya odaklanıyoruz.
+                        Birlikte daha güçlü bir gelecek için, daha sağlıklı ve güçlü firmaların gelişimine rehberlik
+                        ediyoruz. </p>
+                    <div class="ceo-details">
+                        <img src="/static/img/signature.png" alt="Gamze Karaa İmza">
+                        <h5>Gamze KARAA</h5>
+                        <span>Founder & CEO</span> <br>
+                        <span>info@firmaklinigi.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-overlay"></div>
+</div>
+<!--  about section end  -->
+
+
+<!--  Testimonial section start  -->
+{#<div class="testimonial-section">#}
+{#    <div class="container">#}
+{#        <div class="testimonial-container">#}
+{#            <div class="row">#}
+{#                <div class="col-lg-5">#}
+{#                    <div class="testimonial">#}
+{#                        <span class="title">Testimonial</span>#}
+{#                        <h2 class="subtitle">WHAT THEY SAY</h2>#}
+{#                        <div class="testimonial-carousel owl-carousel owl-theme">#}
+{#                            <div class="single-testimonial">#}
+{#                                <p>They offers a host of logistic management services and supply chain . We provide#}
+{#                                    innovative solutions with the best. tempor incididunt ut labore et dolor empor#}
+{#                                    tempor incididunt#}
+{#                                </p>#}
+{#                                <h5>Jonathon Doe</h5>#}
+{#                                <span>Directer, art media</span>#}
+{#                            </div>#}
+{#                            <div class="single-testimonial">#}
+{#                                <p>They offers a host of logistic management services and supply chain . We provide#}
+{#                                    innovative solutions with the best. tempor incididunt ut labore et dolor empor#}
+{#                                    tempor incididunt </p>#}
+{#                                <h5>Jonathon Doe</h5>#}
+{#                                <span>Directer, art media</span>#}
+{#                            </div>#}
+{#                            <div class="single-testimonial">#}
+{#                                <p>They offers a host of logistic management services and supply chain . We provide#}
+{#                                    innovative solutions with the best. tempor incididunt ut labore et dolor empor#}
+{#                                    tempor incididunt </p>#}
+{#                                <h5>Jonathon Doe</h5>#}
+{#                                <span>Directer, art media</span>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="col-lg-7">#}
+{#                    <div class="free-space"></div>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="quote-icon">#}
+{#                <i class="flaticon-quote-left"></i>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+<!--  Testimonial section end  -->
+
+
+<!--   partner section start    -->
+<div class="partner-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="partner-carousel owl-carousel owl-theme border-bottom border-top-lg-0 border-top">
+                    <div class="single-partner-item">
+                        <div class="outer">
+                            <div class="inner">
+                                <img src="/static/img/inci_aku_logo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-partner-item">
+                        <div class="outer">
+                            <div class="inner">
+                                <img src="/static/img/partner-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-partner-item">
+                        <div class="outer">
+                            <div class="inner">
+                                <img src="/static/img/partner-2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-partner-item">
+                        <div class="outer">
+                            <div class="inner">
+                                <img src="/static/img/partner-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-partner-item">
+                        <div class="outer">
+                            <div class="inner">
+                                <img src="/static/img/partner-4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-partner-item">
+                        <div class="outer">
+                            <div class="inner">
+                                <img src="/static/img/partner-5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--   partner section end    -->
+
+
+<!--   faq section start    -->
+<div class="faq-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-7">
+                <div class="targets">
+                    <div class="box wow fadeInUp" data-wow-duration="1.5s">
+                        <div class="icon-wrapper"><i
+                                class="flaticon-external-link-square-with-an-arrow-in-right-diagonal"></i></div>
+                        <div class="box-details">
+                            <h4>Misyonumuz</h4>
+                            <p>Biz, Türkiye’de Ar-Ge faaliyeti yürüten firmaların muhasebe sistemlerini kuruyor ve iç
+                                denetimlerine destek oluyoruz. Projeler, Teşvik ve Hibelerle, vergi ve sigortalarla
+                                ilgili çalışmaları yapıyoruz. Firmaların doğrudan istihdam sağlamadığı bazı
+                                fonksiyonlarda nitelikli personel desteği sağlıyoruz. </p>
+                        </div>
+                    </div>
+                    <div class="box wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".2s">
+                        <div class="icon-wrapper"><i class="flaticon-check"></i></div>
+                        <div class="box-details">
+                            <h4>Vizyonumuz</h4>
+                            <p>Firma Kliği, firma yönetimlerinin etkinliğini artırmak için; Muhasebe, Finansman ve İnsan
+                                Kaynakları alanlarındaki danışmanlık ve araştırmalarıyla yaratıcı ve yenilikçi çözümler
+                                sunar. Ekibi ve altyapısıyla, danışmanlıkta yeni bir model oluşturmayı, referans
+                                gösterilen danışmanlık kurumlarından biri olmayı hedefler.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offset-xl-1 col-xl-5 col-lg-5 faqs">
+                <span class="title"></span>
+                <h2 class="subtitle">Sık Sorulan Sorular </h2>
+                <div class="accordion" id="accordionExample">
+                    <div class="card wow fadeInUp" data-wow-duration="1s">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed btn-block text-left" type="button"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                        aria-controls="collapseOne">
+                                    Neden Teknokent’te yer almalıyız ya da Ar-ge merkezimiz olmalıdır?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                             data-parent="#accordionExample">
+                            <div class="card-body">
+                                Ar-ge faaliyeti yürüten firmaların Ar-ge merkezleri olsa dahi Teknokent’te yer
+                                almalarının oldukça avantajlı sonuçları bulunmaktadır. Gelir-Damga ve Kurumlar Vergisine
+                                ilişkin hibe ve desteklerden yararlanılabilmesi için en ideal yol olarak görünmektedir.
+                                Ayrıca teknoloji üreten firmaların hibe ve destek programlarına yaptığı proje
+                                başvurularının kabul olasılığı daha yüksektir.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed btn-block text-left" type="button"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                    Teknokent’te nasıl yer alabiliriz?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                             data-parent="#accordionExample">
+                            <div class="card-body">
+                                Teknokent’te yer alabilmenin öncelikli şartı, yönetici şirkete yapılacak proje
+                                başvurusunun kabul edilmesidir. Proje kabul edildikten sonra şayet ofis için uygun yer
+                                varsa, başvurularda öncelik ve önem şartlarına göre yönetici şirket tarafından yer
+                                tahsisi gerçekleştirilmektedir.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed btn-block text-left" type="button"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                    Teknokent’te yer almanın maliyeti nedir?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                             data-parent="#accordionExample">
+                            <div class="card-body">
+                                Teknokent’lerde proje başvuruları ücretlidir ve bu ücretler Yönetici şirkete
+                                ödenmektedir. Kiralanacak ofis için çalışacak personel sayısına göre bir metrekare
+                                belirlenmelidir. Günümüz Covid-19 salgını şartlarında bu 7.5 metrekareye bir personel
+                                şeklinde uygulanmaktadır.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--   faq section end    -->
+
+
+<!--   quote section start    -->
+<div class="quote-section quote-bg">
+    <div class="container">
+        <div class="row">
+            <div class="offset-lg-5 col-lg-7">
+                <div class="quote-form-section">
+                    <span class="title">İletişim</span>
+                    <h2 class="subtitle">Bizimle İletişime Geçin</h2>
+                    <form action="" method="post"> {% csrf_token %}
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-element">{{ form.name }}</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-element">
+                                    {{ form.subject }}
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-element">{{ form.email }}</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-element">{{ form.phone }}</div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-element mb-0">
+                                    <button type="submit"><span>Gönder</span></button>
+                                </div>
+                            </div>
+                            {% if messages %}
+
+                                {% for message in messages %}
+                                    <li  {% if message.tags %}
+                                        class=" {{ message.tags }} " {% endif %}><h1>{{ message }}</h1></li>
+                                {% endfor %}
+
+                            {% endif %}
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--   quote section end    -->
+
+
+<!--   news section start    -->
+<div class="news-section">
+    <div class="container">
+        <span class="title">Firma Kliniği</span>
+        <h2 class="subtitle">Bloğumuz</h2>
+        <h1>Yapım Aşamasında...</h1>
+        {#        <div class="row">#}
+        {#            <div class="col-lg-4 col-md-6">#}
+        {#                <div class="single-news wow fadeInRight" data-wow-duration="1.5s">#}
+        {#                    <img src="/static/img/news-1.jpg" alt="">#}
+        {#                    <div class="news-txt">#}
+        {#                        <span class="date">November 05, 2018  -  BY Admin</span>#}
+        {#                        <a href="blog-details.html" class="title">#}
+        {#                            <h3>Flexible shipping are increasing day by day gradually...</h3>#}
+        {#                        </a>#}
+        {#                        <a class="readmore" href="blog-details.html">Read More</a>#}
+        {#                    </div>#}
+        {#                </div>#}
+        {#            </div>#}
+        {#            <div class="col-lg-4 col-md-6">#}
+        {#                <div class="single-news wow fadeInRight" data-wow-duration="1.5s" data-wow-delay=".2s">#}
+        {#                    <img src="/static/img/news-2.jpg" alt="">#}
+        {#                    <div class="news-txt">#}
+        {#                        <span class="date">November 05, 2018  -  BY Admin</span>#}
+        {#                        <a href="blog-details.html" class="title">#}
+        {#                            <h3>Big warehouse are most friendly for new shipping..</h3>#}
+        {#                        </a>#}
+        {#                        <a class="readmore" href="blog-details.html">Read More</a>#}
+        {#                    </div>#}
+        {#                </div>#}
+        {#            </div>#}
+        {#            <div class="col-lg-4 col-md-6">#}
+        {#                <div class="single-news wow fadeInRight" data-wow-duration="1.5s" data-wow-delay=".4s">#}
+        {#                    <img src="/static/img/news-3.jpg" alt="">#}
+        {#                    <div class="news-txt">#}
+        {#                        <span class="date">November 05, 2018  -  BY Admin</span>#}
+        {#                        <a href="blog-details.html" class="title">#}
+        {#                            <h3>Keep your product in storage for long time...</h3>#}
+        {#                        </a>#}
+        {#                        <a class="readmore" href="blog-details.html">Read More</a>#}
+        {#                    </div>#}
+        {#                </div>#}
+        {#            </div>#}
+        {#        </div>#}
+    </div>
+</div>
+<!--   news section end    -->
+
+
+<!--   cta section start    -->
+<div class="cta-section cta-bg">
+    <div class="container">
+        <div class="cta-container">
+            <div class="row align-items-center">
+                <div class="col-lg-9">
+                    <h2 class="mb-lg-0 text-center text-lg-left">Hedeflerinize Güvenle Ulaşın</h2>
+                </div>
+                <div class="col-lg-3 text-center text-lg-right">
+                    <a href="/iletisim/" class="boxed-btn"><span>İletişime Geçin</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cta-overlay"></div>
+</div>
+<!--   cta section end    -->
+
+
+<!--   footer section start    -->
+{% include 'footer.html' %}
+<!--   footer section end    -->
+
+
+<!-- popper js -->
+<script src="/static/js/popper.min.js"></script>
+<!-- bootstrap js -->
+<script src="/static/js/bootstrap.min.js"></script>
+<!-- owl carousel js -->
+<script src="/static/js/owl.carousel.min.js"></script>
+<!-- isotope js -->
+<script src="/static/js/isotope.pkgd.min.js"></script>
+<!-- slicknav js -->
+<script src="/static/js/jquery.slicknav.min.js"></script>
+<!-- wow js -->
+<script src="/static/js/wow.min.js"></script>
+<!-- main js -->
+<script src="/static/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+{% include 'head.html' %}
+
+
+<body>
+<!--   header area start   -->
+{% include 'header.html' %}
+<!--   header area end   -->
+
+
+<!--   search bar popup start   -->
+<div class="search-popup">
+    <form class="search-form" action="#">
+        <div class="form-element"><input type="text" placeholder="Type your search keyword"></div>
+    </form>
+    <div class="search-popup-overlay" id="searchOverlay"></div>
+    <button class="search-close-btn" id="searchCloseBtn"><i class="fas fa-times"></i></button>
+</div>
+<!--   search bar popup end   -->
+
+
+<!--  breadcrumb start  -->
+<div class="breadcrumb-area services-breadcrumb-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="breadcrumb-txt">
+
+                    <h1>Uygulamalı Çözümler</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="">Anasayfa</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Hizmetlerimiz</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="breadcrumb-overlay"></div>
+</div>
+<!--  breadcrumb end  -->
+
+
+<!--  service section start  -->
+<div class="service-section services">
+    <div class="container">
+        <span class="title">Hizmetlerimiz</span>
+        <h2 class="subtitle">Neler Sunuyoruz</h2>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-service wow fadeInRight" data-wow-duration="1s">
+                    <div class="img-wrapper">
+                        <img src="/static/img/services/service_1.jpg" alt="Ar-Ge Hizmetleri">
+                    </div>
+                    <div class="service-txt">
+                        <h4 class="service-title">Ar-Ge Hizmetleri</h4>
+{#                        <p class="service-para">AÇIKLAMA YAZILACAK</p>#}
+                        <a href="/hizmetlerimiz/ar-ge-hizmetleri/" class="readmore">HİZMETLERİ GÖR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-service wow fadeInRight" data-wow-duration="1s" data-wow-delay=".2s">
+                    <div class="img-wrapper">
+                        <img src="/static/img/services/service_2.jpg" alt="Vergi ve Sigorta Hizmetleri">
+                    </div>
+                    <div class="service-txt">
+                        <h4 class="service-title">Vergi ve Sigorta Hizmetleri</h4>
+{#                        <p class="service-para">AÇIKLAMA YAZILACAK</p>#}
+                        <a href="/hizmetlerimiz/vergi-ve-sigorta-danismanligi/" class="readmore">HİZMETLERİ GÖR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-service wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
+                    <div class="img-wrapper">
+                        <img src="/static/img/services/service_3.jpg" alt="Hibe ve Teşvik Danışmanlığı">
+                    </div>
+                    <div class="service-txt">
+                        <h4 class="service-title">Hibe ve Teşvik Danışmanlığı</h4>
+{#                        <p class="service-para">AÇIKLAMA YAZILACAK</p>#}
+                        <a href="/hizmetlerimiz/genel-hibe-ve-tesvik-danismanligi/" class="readmore">HİZMETLERİ GÖR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-service wow fadeInRight" data-wow-duration="1s">
+                    <div class="img-wrapper">
+                        <img src="/static/img/services/service_4.jpg" alt="Proje Yazım ve Yönetimi Hizmetleri">
+                    </div>
+                    <div class="service-txt">
+                        <h4 class="service-title">Proje Yazım ve Yönetimi Hizmetleri</h4>
+{#                        <p class="service-para">AÇIKLAMA YAZILACAK</p>#}
+                        <a href="/hizmetlerimiz/proje-yazim-ve-yönetimi-hizmetleri/" class="readmore">HİZMETLERİ GÖR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-service wow fadeInRight" data-wow-duration="1s" data-wow-delay=".2s">
+                    <div class="img-wrapper">
+                        <img src="/static/img/services/service_5.jpg" alt="Şirket Değerleme">
+                    </div>
+                    <div class="service-txt">
+                        <h4 class="service-title">Şirket Değerleme</h4>
+{#                        <p class="service-para">AÇIKLAMA YAZILACAK</p>#}
+                        <a href="/hizmetlerimiz/sirket-degerleme/" class="readmore">HİZMETLERİ GÖR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-service wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
+                    <div class="img-wrapper">
+                        <img src="/static/img/services/service_6.jpg" alt="Destek Hizmetleri">
+                    </div>
+                    <div class="service-txt">
+                        <h4 class="service-title">Destek Hizmetleri</h4>
+{#                        <p class="service-para">AÇIKLAMA YAZILACAK</p>#}
+                        <a href="/hizmetlerimiz/destek-hizmetleri/" class="readmore">HİZMETLERİ GÖR</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-service wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
+                    <div class="img-wrapper">
+                        <img src="/static/img/services/service_7.jpg" alt="Yatırım ve Teşvik Danışmanlığı">
+                    </div>
+                    <div class="service-txt">
+                        <h4 class="service-title">Yatırım ve Teşvik Danışmanlığı</h4>
+{#                        <p class="service-para">AÇIKLAMA YAZILACAK</p>#}
+                        <a href="/hizmetlerimiz/yatirim-ve-tesvik-danismanligi/" class="readmore">HİZMETLERİ GÖR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  service section end  -->
+
+
+<!--   quote section start    -->
+<div class="quote-section quote-bg">
+    <div class="container">
+        <div class="row">
+            <div class="offset-lg-5 col-lg-7">
+                <div class="quote-form-section">
+                    <span class="title">İletişim</span>
+                    <h2 class="subtitle">Bizimle İletişime Geçin</h2>
+                    <form action="" method="post"> {% csrf_token %}
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-element">{{ form.name }}</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-element">
+                                    {{ form.subject }}
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-element">{{ form.email }}</div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-element">{{ form.phone }}</div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-element mb-0">
+                                    <button type="submit"><span>Gönder</span></button>
+                                </div>
+                            </div>
+                            {% if messages %}
+
+                                {% for message in messages %}
+                                    <li  {% if message.tags %}
+                                        class=" {{ message.tags }} " {% endif %}> <h1>{{ message }}</h1> </li>
+                                {% endfor %}
+
+                            {% endif %}
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--   quote section end    -->
+
+
+<!--  features section start  -->
+{#<div class="features-section home-2 border-bottom">#}
+{#    <div class="container">#}
+{#        <div class="row feature-content">#}
+{#            <div class="col-xl-5 offset-xl-7 col-lg-6 offset-lg-6 pr-0">#}
+{#                <div class="features">#}
+{#                    <span class="title">Features</span>#}
+{#                    <h2 class="subtitle">WHY CHOOSE US</h2>#}
+{#                    <div class="feature-lists">#}
+{#                        <div class="single-feature wow fadeInUp" data-wow-duration="1s">#}
+{#                            <div class="icon-wrapper"><i class="flaticon-customer-service"></i></div>#}
+{#                            <div class="feature-details">#}
+{#                                <h4>24/7 support</h4>#}
+{#                                <p>We offers logistic management services and supply chain perspiciatis unde omnis iste#}
+{#                                    natus error sit voluptat. </p>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="single-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">#}
+{#                            <div class="icon-wrapper"><i class="flaticon-email"></i></div>#}
+{#                            <div class="feature-details">#}
+{#                                <h4>On time delivery</h4>#}
+{#                                <p>We offers logistic management services and supply chain perspiciatis unde omnis iste#}
+{#                                    natus error sit voluptat. </p>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                        <div class="single-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">#}
+{#                            <div class="icon-wrapper"><i class="flaticon-worldwide"></i></div>#}
+{#                            <div class="feature-details">#}
+{#                                <h4>global service</h4>#}
+{#                                <p>We offers logistic management services and supply chain perspiciatis unde omnis iste#}
+{#                                    natus error sit voluptat.</p>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+<!--  features section end  -->
+
+
+<!--   partner section start    -->
+<div class="partner-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="partner-carousel owl-carousel owl-theme">
+                    <div class="single-partner-item">
+                        <div class="outer">
+                            <div class="inner">
+                                <img src="/static/img/inci_aku_logo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-partner-item">
+                        <div class="outer">
+                            <div class="inner">
+                                <img src="/static/img/partner-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-partner-item">
+                        <div class="outer">
+                            <div class="inner">
+                                <img src="/static/img/partner-2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-partner-item">
+                        <div class="outer">
+                            <div class="inner">
+                                <img src="/static/img/partner-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-partner-item">
+                        <div class="outer">
+                            <div class="inner">
+                                <img src="/static/img/partner-4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-partner-item">
+                        <div class="outer">
+                            <div class="inner">
+                                <img src="/static/img/partner-5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--   partner section end    -->
+
+
+<!--   cta section start    -->
+<div class="cta-section cta-bg">
+    <div class="container">
+        <div class="cta-container">
+            <div class="row align-items-center">
+                <div class="col-lg-9">
+                    <h2 class="mb-lg-0 text-center text-lg-left">Hedeflerinize Güvenle Ulaşın</h2>
+                </div>
+                <div class="col-lg-3 text-center text-lg-right">
+                    <a href="/iletisim/" class="boxed-btn"><span>İletişime Geçin</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cta-overlay"></div>
+</div>
+<!--   cta section end    -->
+
+
+<!--   footer section start    -->
+{% include 'footer.html' %}
+<!--   footer section end    -->
+
+
+<!-- preloader section start -->
+<div class="loader-container">
+         <span class="loader">
+         <span class="loader-inner"></span>
+         </span>
+</div>
+<!-- preloader section end -->
+
+
+<!-- back to top area start -->
+<div class="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+</div>
+<!-- back to top area end -->
+
+
+<!-- popper js -->
+<script src="/static/js/popper.min.js"></script>
+<!-- bootstrap js -->
+<script src="/static/js/bootstrap.min.js"></script>
+<!-- owl carousel js -->
+<script src="/static/js/owl.carousel.min.js"></script>
+<!-- isotope js -->
+<script src="/static/js/isotope.pkgd.min.js"></script>
+<!-- slicknav js -->
+<script src="/static/js/jquery.slicknav.min.js"></script>
+<!-- wow js -->
+<script src="/static/js/wow.min.js"></script>
+<!-- main js -->
+<script src="/static/js/main.js"></script>
+</body>
+
+</html>
